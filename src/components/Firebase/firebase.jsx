@@ -26,7 +26,7 @@ class Firebase  {
     }
     
     // connexion 
-    LoginUser = (email,password)=>{
+    loginUser = (email,password)=>{
         this.auth.signInWithEmailAndPassword(email,password);
     }
     // deconnexion

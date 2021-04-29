@@ -28,7 +28,7 @@ const Signup = (props) => {
         firebase.signUpUser(email, password)
         .then( user => {
             setLoginData({...data});
-            props.history.push('/welcome');// redirection
+            props.history.push('/welcome');// redirection vers welcom
         })
         .catch(error => {
             setError(error);
