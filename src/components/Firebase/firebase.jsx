@@ -1,5 +1,7 @@
 import app from 'firebase/app';
 
+import 'firebase/auth';
+
 import React, { Component } from 'react'
 
 
@@ -15,7 +17,21 @@ const config = {
 class Firebase  {
     constructor() {
        app.initializeApp(config);
+       this.auth= app.auth();
     }
+
+    // inscription 
+    signUpUser = (email,password)=>{
+        this.auth.createUserWithEmailAndPassword(email,password);
+    }
+    
+    // connexion 
+    LoginUser = (email,password)=>{
+        this.auth.signInWithEmailAndPassword(email,password);
+    }
+    // deconnexion
+    signOutUser = ()=> this.auth.signOut();
+
 
   }
 export default  Firebase;
