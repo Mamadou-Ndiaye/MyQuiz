@@ -110,13 +110,13 @@ main {
   display: flex;
   flex: 0 1 35%;
   align-items: flex-start;
-  justify-content: flex-end;
 }
 
 .rightBox {
   display: flex;
   flex: 0 1 35%;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .btn-welcome {
