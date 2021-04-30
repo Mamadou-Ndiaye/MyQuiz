@@ -21,14 +21,13 @@ class Firebase  {
     }
 
     // inscription 
-    signUpUser = (email,password)=>{
-        this.auth.createUserWithEmailAndPassword(email,password);
-    }
+    signUpUser = (email,password)=>
+    this.auth.createUserWithEmailAndPassword(email,password);
+    
     
     // connexion 
-    loginUser = (email,password)=>{
-        this.auth.signInWithEmailAndPassword(email,password);
-    }
+    loginUser = (email,password)=>this.auth.signInWithEmailAndPassword(email,password);
+    
     // deconnexion
     signOutUser = ()=> this.auth.signOut();
 
