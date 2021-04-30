@@ -15,7 +15,7 @@ const ErrorPage = () => {
     <div className="quiz-bg">
         <div className="container">
             <h2 style={centerH2}>Oups , cette page n existe pas !</h2>
-            <img  style={centerImg}  src={batman} alt="error page"/>
+            <img  style={centerImg }  src={batman} alt="error page"/>
          </div>
     </div>
   )
